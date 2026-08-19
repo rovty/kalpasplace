@@ -15,8 +15,8 @@ export default function App() {
       <Navbar />
       <Hero />
       <About />
-      <DroneVideo />
       <Rooms />
+      <DroneVideo />
       <Experience />
       <Gallery />
       <Location />

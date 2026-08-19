@@ -34,13 +34,13 @@ export default function Location() {
               The beach, cafés and restaurants are all close by, while the rest of Sri Lanka's south coast is easy to explore from Hiriketiya.
             </p>
 
-            <div className="flex items-start gap-3 mb-6 p-4 bg-white rounded-2xl shadow-sm border border-gray-100">
+            <a href="https://maps.google.com/?q=Kalpa's+Place+Hiriketiya+Dickwella" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 mb-6 p-4 bg-white rounded-2xl shadow-sm border border-gray-100 hover:border-teal-200 transition-colors group">
               <MapPin size={20} className="text-teal-600 mt-0.5 flex-shrink-0" />
               <div>
-                <p className="font-display text-gray-900 font-bold text-base mb-0.5">Kalpa's Place</p>
+                <p className="font-display text-gray-900 font-bold text-base mb-0.5 group-hover:text-teal-700 transition-colors">Kalpa's Place</p>
                 <p className="text-gray-500 text-sm font-body">Hiriketiya Beach, Dickwella,<br />Southern Province, Sri Lanka</p>
               </div>
-            </div>
+            </a>
           </div>
 
           {/* Google Map */}
