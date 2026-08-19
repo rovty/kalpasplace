@@ -1,14 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { MapPin, Clock, Navigation } from 'lucide-react';
-
-const nearbyPlaces = [
-  { name: 'Tangalle Town', distance: '12 km', time: '20 min' },
-  { name: 'Dickwella Beach', distance: '8 km', time: '15 min' },
-  { name: 'Weligama Bay', distance: '34 km', time: '45 min' },
-  { name: 'Matara Fort', distance: '24 km', time: '35 min' },
-  { name: 'Galle Fort', distance: '90 km', time: '2 hrs' },
-  { name: 'Colombo Airport', distance: '235 km', time: '3.5 hrs' },
-];
+import { MapPin } from 'lucide-react';
 
 export default function Location() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -49,24 +40,6 @@ export default function Location() {
                 <p className="font-display text-gray-900 font-bold text-base mb-0.5">Kalpa's Place</p>
                 <p className="text-gray-500 text-sm font-body">Hiriketiya Beach, Dickwella,<br />Southern Province, Sri Lanka</p>
               </div>
-            </div>
-
-            <h3 className="font-display text-lg text-gray-900 mb-4">Distances from Nearby Towns</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {nearbyPlaces.map((place, i) => (
-                <div key={i} className="flex items-center justify-between p-3 bg-white rounded-xl border border-gray-100">
-                  <div className="flex items-center gap-2">
-                    <Navigation size={13} className="text-teal-500" />
-                    <span className="text-sm text-gray-700 font-body">{place.name}</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-gray-400">
-                    <span>{place.distance}</span>
-                    <span>·</span>
-                    <Clock size={11} />
-                    <span>{place.time}</span>
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
 
