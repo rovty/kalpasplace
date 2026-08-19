@@ -48,21 +48,21 @@ export default function About() {
           <div className="reveal grid grid-cols-2 gap-3 h-[480px]">
             <div className="overflow-hidden rounded-2xl row-span-2">
               <img
-                src="/images/tropical-palms.jpg"
+                src="/images/gallery-2.jpg"
                 alt="Tropical beach palm trees"
                 className="w-full h-full object-cover slide-img"
               />
             </div>
             <div className="overflow-hidden rounded-2xl">
               <img
-                src="/images/surfer.jpg"
+                src="/images/gallery-1.jpg"
                 alt="Surfer on wave"
                 className="w-full h-full object-cover slide-img"
               />
             </div>
             <div className="overflow-hidden rounded-2xl">
               <img
-                src="/images/beach-coffee.jpg"
+                src="/images/gallery-3.jpg"
                 alt="Beach coffee and relaxation"
                 className="w-full h-full object-cover slide-img"
               />

@@ -3,19 +3,19 @@ import { ChevronDown } from 'lucide-react';
 
 const slides = [
   {
-    url: '/images/beach-aerial.jpg',
+    url: '/images/hero-1.jpg',
     alt: 'Hiriketiya Beach sunrise',
   },
   {
-    url: '/images/tropical-beach.jpg',
+    url: '/images/hero-2.jpg',
     alt: 'Tropical beach Sri Lanka',
   },
   {
-    url: '/images/beach-waves.jpg',
+    url: '/images/hero-3.jpg',
     alt: 'Beach waves surfing',
   },
   {
-    url: '/images/resort-palms.jpg',
+    url: '/images/hero-4.jpg',
     alt: 'Tropical resort palm trees',
   },
 ];

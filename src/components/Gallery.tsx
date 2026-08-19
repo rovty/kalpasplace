@@ -3,37 +3,37 @@ import { X, ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react';
 
 const images = [
   {
-    url: '/images/beach-aerial.jpg',
+    url: '/images/hero-1.jpg',
     alt: 'Hiriketiya beach aerial view',
     span: 'col-span-2 row-span-2',
   },
   {
-    url: '/images/surfer.jpg',
+    url: '/images/gallery-1.jpg',
     alt: 'Surfer on wave',
     span: '',
   },
   {
-    url: '/images/tropical-palms.jpg',
+    url: '/images/gallery-2.jpg',
     alt: 'Tropical palm trees beach',
     span: '',
   },
   {
-    url: '/images/beach-coffee.jpg',
+    url: '/images/gallery-3.jpg',
     alt: 'Beach coffee relaxation',
     span: '',
   },
   {
-    url: '/images/resort-palms.jpg',
+    url: '/images/hero-4.jpg',
     alt: 'Tropical resort pool',
     span: '',
   },
   {
-    url: '/images/tropical-bungalow.jpg',
+    url: '/images/bungalow.jpg',
     alt: 'Tropical bungalow',
     span: '',
   },
   {
-    url: '/images/beach-waves.jpg',
+    url: '/images/hero-3.jpg',
     alt: 'Ocean waves',
     span: '',
   },
