@@ -21,16 +21,9 @@ export default function DroneVideo() {
     <section ref={sectionRef} className="py-20 bg-[#f7f5f0]">
       <div className="max-w-6xl mx-auto px-6">
         <div className="reveal text-center mb-12">
-          <p className="text-xs tracking-[0.25em] uppercase text-teal-600 font-body mb-3">
-            Aerial View
-          </p>
           <h2 className="text-4xl md:text-5xl font-display text-gray-900">
-            Hiriketiya,<br />
-            <span className="italic text-teal-700">From Above</span>
+            Hiriketiya, <span className="italic text-teal-700">From Above</span>
           </h2>
-          <p className="mt-4 max-w-xl mx-auto text-gray-500 font-body font-light text-base leading-relaxed">
-            A small bay, tropical surroundings and the Indian Ocean right outside. Hiriketiya is easy to fall into — and even harder to leave.
-          </p>
         </div>
 
         <div className="reveal">
@@ -46,10 +39,9 @@ export default function DroneVideo() {
         </div>
 
         {/* Stats bar */}
-        <div className="reveal grid grid-cols-2 md:grid-cols-4 gap-px mt-12 bg-gray-200 rounded-2xl overflow-hidden shadow-sm">
+        <div className="reveal grid grid-cols-3 gap-px mt-12 bg-gray-200 rounded-2xl overflow-hidden shadow-sm">
           {[
             { label: 'Walk to Beach', value: '< 2 min' },
-            { label: 'Tropical Weather', value: 'All Year' },
             { label: 'Check-in', value: '2:00 PM' },
             { label: 'Check-out', value: '11:00 AM' },
           ].map((stat, i) => (

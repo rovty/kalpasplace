@@ -70,9 +70,6 @@ export default function Rooms() {
     <section id="rooms" ref={sectionRef} className="py-24 md:py-32 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <div className="reveal text-center mb-16">
-          <p className="text-xs tracking-[0.25em] uppercase text-teal-600 font-body mb-3">
-            Where You'll Rest
-          </p>
           <h2 className="text-4xl md:text-5xl font-display text-gray-900 leading-tight">
             Rooms & <span className="italic text-teal-700">Suites</span>
           </h2>
@@ -133,7 +130,7 @@ export default function Rooms() {
                   rel="noopener noreferrer"
                   className="w-full inline-flex justify-center items-center px-6 py-2.5 rounded-xl bg-teal-700 text-white text-sm font-medium hover:bg-teal-800 transition-all duration-300"
                 >
-                  Reserve this Room
+                  Check Availability
                 </a>
               </div>
             </div>

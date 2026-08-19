@@ -103,7 +103,7 @@ export default function Hero() {
             Book Your Stay
           </a>
           <a
-            href="#about"
+            href="#rooms"
             className="px-8 py-3.5 rounded-full border border-white/50 text-white hover:bg-white/15 font-medium tracking-wide transition-all duration-300 backdrop-blur-sm"
           >
             Explore Rooms

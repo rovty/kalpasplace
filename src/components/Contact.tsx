@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Phone, Mail, MapPin, ExternalLink, MessageCircle, Instagram, Facebook } from 'lucide-react';
+import { Mail, MapPin, ExternalLink, MessageCircle, Instagram, Facebook } from 'lucide-react';
 
 export default function Contact() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -51,12 +51,12 @@ export default function Contact() {
               <div className="absolute bottom-0 left-0 w-28 h-28 rounded-full bg-white/5 translate-y-1/2 -translate-x-1/2" />
               <h3 className="font-display text-2xl mb-6 relative z-10">Reach Us</h3>
               <div className="space-y-5 relative z-10">
-                <a href="tel:+94776765556" className="flex items-start gap-4 group">
+                <a href="https://wa.me/94776765556" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 group">
                   <div className="w-9 h-9 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0 group-hover:bg-white/25 transition-colors">
-                    <Phone size={16} />
+                    <MessageCircle size={16} />
                   </div>
                   <div>
-                    <p className="text-white/60 text-xs uppercase tracking-widest mb-0.5">Phone / WhatsApp</p>
+                    <p className="text-white/60 text-xs uppercase tracking-widest mb-0.5">WhatsApp Us</p>
                     <p className="text-white text-sm font-medium">+94 776 765 556</p>
                   </div>
                 </a>
@@ -97,7 +97,7 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Book on Booking.com */}
+            {/* Check Availability */}
             <a
               href="https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html"
               target="_blank"
@@ -105,8 +105,7 @@ export default function Contact() {
               className="flex items-center justify-between px-6 py-5 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white transition-all duration-300 shadow-lg hover:shadow-xl group"
             >
               <div>
-                <p className="text-xs text-white/70 uppercase tracking-widest mb-1">Instant Confirmation</p>
-                <p className="font-display text-lg font-bold">Book on Booking.com</p>
+                <p className="font-display text-lg font-bold">Check Availability on Booking.com</p>
               </div>
               <ExternalLink size={20} className="text-white/70 group-hover:text-white transition-colors group-hover:translate-x-0.5 group-hover:-translate-y-0.5 duration-200" />
             </a>
@@ -202,12 +201,7 @@ export default function Contact() {
                 >
                   Send Enquiry
                 </button>
-                <p className="text-center text-xs text-gray-400 font-body">
-                  Want to secure your stay?{' '}
-                  <a href="https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                    Book directly through Booking.com
-                  </a>
-                </p>
+
               </form>
             )}
           </div>

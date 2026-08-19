@@ -14,8 +14,8 @@ export default function App() {
     <div className="font-body">
       <Navbar />
       <Hero />
-      <About />
       <Rooms />
+      <About />
       <DroneVideo />
       <Experience />
       <Gallery />
