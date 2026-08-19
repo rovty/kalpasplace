@@ -105,12 +105,7 @@ export default function Gallery() {
           ))}
         </div>
 
-        {/* Placeholder note */}
-        <div className="reveal mt-6 text-center">
-          <p className="text-gray-400 text-sm font-body italic">
-            These are placeholder images — replace with your own Hiriketiya photos.
-          </p>
-        </div>
+
       </div>
 
       {/* Lightbox */}

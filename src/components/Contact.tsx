@@ -52,13 +52,13 @@ export default function Contact() {
               <div className="absolute bottom-0 left-0 w-28 h-28 rounded-full bg-white/5 translate-y-1/2 -translate-x-1/2" />
               <h3 className="font-display text-2xl mb-6 relative z-10">Reach Us</h3>
               <div className="space-y-5 relative z-10">
-                <a href="tel:+94XXXXXXXXX" className="flex items-start gap-4 group">
+                <a href="tel:+94776765556" className="flex items-start gap-4 group">
                   <div className="w-9 h-9 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0 group-hover:bg-white/25 transition-colors">
                     <Phone size={16} />
                   </div>
                   <div>
                     <p className="text-white/60 text-xs uppercase tracking-widest mb-0.5">Phone / WhatsApp</p>
-                    <p className="text-white text-sm font-medium">+94 XX XXX XXXX</p>
+                    <p className="text-white text-sm font-medium">+94 776 765 556</p>
                   </div>
                 </a>
                 <a href="mailto:hello@kalpasplace.lk" className="flex items-start gap-4 group">
@@ -76,7 +76,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-white/60 text-xs uppercase tracking-widest mb-0.5">Address</p>
-                    <p className="text-white text-sm font-medium">Hiriketiya Beach, Dickwella<br />Southern Province, Sri Lanka</p>
+                    <p className="text-white text-sm font-medium">Kalpas Place, Hiriketiya<br />Dickwella, Sri Lanka</p>
                   </div>
                 </div>
               </div>
@@ -91,7 +91,7 @@ export default function Contact() {
                   <a href="#" className="w-9 h-9 rounded-lg bg-white/15 hover:bg-white/25 flex items-center justify-center transition-colors" aria-label="Facebook">
                     <Facebook size={16} />
                   </a>
-                  <a href="https://wa.me/94XXXXXXXXX" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-white/15 hover:bg-white/25 flex items-center justify-center transition-colors" aria-label="WhatsApp">
+                  <a href="https://wa.me/94776765556" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-white/15 hover:bg-white/25 flex items-center justify-center transition-colors" aria-label="WhatsApp">
                     <MessageCircle size={16} />
                   </a>
                 </div>
@@ -100,7 +100,7 @@ export default function Contact() {
 
             {/* Book on Booking.com */}
             <a
-              href="https://www.booking.com"
+              href="https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-between px-6 py-5 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white transition-all duration-300 shadow-lg hover:shadow-xl group"
