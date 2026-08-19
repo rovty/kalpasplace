@@ -17,7 +17,7 @@ export default function Footer() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://www.booking.com"
+              href="https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-white text-teal-800 font-medium text-sm hover:bg-teal-50 transition-all duration-300 shadow-lg"
@@ -40,15 +40,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full border-2 border-teal-500 flex items-center justify-center">
-                <span className="text-xs font-bold font-display text-teal-400">KP</span>
-              </div>
-              <div>
-                <p className="font-display text-white font-bold">Kalpa's Place</p>
-                <p className="text-teal-500 text-[11px] tracking-widest uppercase">Hiriketiya Beach, Sri Lanka</p>
-              </div>
-            </div>
+            <p className="font-display text-xl text-white font-bold mb-4">Kalpa's Place</p>
             <p className="text-gray-400 text-sm font-body font-light leading-relaxed max-w-xs">
               A boutique beach retreat beside one of Sri Lanka's finest surf spots.
               Perfect for surfers, nomads, and slow travelers seeking sun, soul, and simplicity.
@@ -60,7 +52,7 @@ export default function Footer() {
               <a href="#" className="w-9 h-9 rounded-lg bg-white/5 hover:bg-teal-700/40 flex items-center justify-center transition-colors text-gray-400 hover:text-white" aria-label="Facebook">
                 <Facebook size={16} />
               </a>
-              <a href="https://wa.me/94XXXXXXXXX" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-white/5 hover:bg-teal-700/40 flex items-center justify-center transition-colors text-gray-400 hover:text-white" aria-label="WhatsApp">
+              <a href="https://wa.me/94776765556" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-white/5 hover:bg-teal-700/40 flex items-center justify-center transition-colors text-gray-400 hover:text-white" aria-label="WhatsApp">
                 <MessageCircle size={16} />
               </a>
             </div>
@@ -104,13 +96,13 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="tel:+94XXXXXXXXX" className="hover:text-teal-400 transition-colors">
-                  +94 XX XXX XXXX
+                <a href="tel:+94776765556" className="hover:text-teal-400 transition-colors">
+                  +94 776 765 556
                 </a>
               </li>
               <li className="pt-2">
                 <a
-                  href="https://www.booking.com"
+                  href="https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-blue-400 hover:text-blue-300 transition-colors"

@@ -205,7 +205,7 @@ export default function Contact() {
                 </button>
                 <p className="text-center text-xs text-gray-400 font-body">
                   Prefer instant booking?{' '}
-                  <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                  <a href="https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                     Book on Booking.com
                   </a>
                 </p>

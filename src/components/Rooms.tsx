@@ -129,7 +129,7 @@ export default function Rooms() {
                   ))}
                 </div>
                 <a
-                  href="https://www.booking.com"
+                  href="https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex justify-center items-center px-6 py-2.5 rounded-xl bg-teal-700 text-white text-sm font-medium hover:bg-teal-800 transition-all duration-300"

@@ -44,22 +44,10 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="#home" className="flex items-center gap-3 group">
-          <div className={`w-10 h-10 rounded-full border-2 flex items-center justify-center overflow-hidden transition-all duration-300 ${
-            scrolled ? 'border-teal-700' : 'border-white/70'
-          }`}>
-            <span className={`text-xs font-bold font-display tracking-tight transition-colors duration-300 ${
-              scrolled ? 'text-teal-800' : 'text-white'
-            }`}>KP</span>
-          </div>
-          <div>
-            <p className={`text-sm font-bold tracking-wide font-display leading-tight transition-colors duration-300 ${
-              scrolled ? 'text-teal-900' : 'text-white text-shadow-sm'
-            }`}>Kalpa's Place</p>
-            <p className={`text-[10px] tracking-widest uppercase transition-colors duration-300 ${
-              scrolled ? 'text-teal-600' : 'text-white/80'
-            }`}>Hiriketiya Beach</p>
-          </div>
+        <a href="#home" className="group">
+          <p className={`text-xl font-bold tracking-wide font-display leading-tight transition-colors duration-300 ${
+            scrolled ? 'text-teal-900' : 'text-white drop-shadow-md'
+          }`}>Kalpa's Place</p>
         </a>
 
         {/* Desktop nav */}
@@ -75,7 +63,7 @@ export default function Navbar() {
                       : 'text-gray-600 hover:text-teal-700'
                     : active === link.href.replace('#', '')
                     ? 'text-white font-medium'
-                    : 'text-white/80 hover:text-white text-shadow-sm'
+                    : 'text-white/90 hover:text-white drop-shadow-md'
                 } after:absolute after:bottom-0 after:left-0 after:h-px after:transition-all after:duration-300 ${
                   active === link.href.replace('#', '')
                     ? 'after:w-full after:bg-current'
@@ -90,13 +78,13 @@ export default function Navbar() {
 
         {/* Book now CTA */}
         <a
-          href="https://www.booking.com"
+          href="https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html"
           target="_blank"
           rel="noopener noreferrer"
           className={`hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
             scrolled
               ? 'bg-teal-700 text-white hover:bg-teal-800 shadow-md hover:shadow-lg'
-              : 'bg-white/15 backdrop-blur-sm border border-white/40 text-white hover:bg-white/25'
+              : 'bg-white/20 backdrop-blur-sm border border-white/50 text-white hover:bg-white/30 drop-shadow-md'
           }`}
         >
           Book Now
@@ -105,7 +93,7 @@ export default function Navbar() {
         {/* Mobile toggle */}
         <button
           className={`md:hidden p-2 rounded-lg transition-colors ${
-            scrolled ? 'text-teal-800' : 'text-white'
+            scrolled ? 'text-teal-800' : 'text-white drop-shadow-md'
           }`}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
@@ -138,7 +126,7 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              href="https://www.booking.com"
+              href="https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}

@@ -96,7 +96,7 @@ export default function Hero() {
         </p>
         <div className="fade-in-up fade-in-up-delay-4 flex flex-col sm:flex-row gap-4 items-center">
           <a
-            href="https://www.booking.com"
+            href="https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-pulse px-8 py-3.5 rounded-full bg-teal-600 hover:bg-teal-700 text-white font-medium tracking-wide transition-all duration-300 shadow-lg hover:shadow-xl"
