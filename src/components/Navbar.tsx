@@ -3,8 +3,8 @@ import { Menu, X } from 'lucide-react';
 
 const links = [
   { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
   { label: 'Rooms', href: '#rooms' },
+  { label: 'About', href: '#about' },
   { label: 'Experience', href: '#experience' },
   { label: 'Gallery', href: '#gallery' },
   { label: 'Contact', href: '#contact' },
