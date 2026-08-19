@@ -39,7 +39,7 @@ export default function Contact() {
             Planning a <span className="italic text-teal-700">Stay?</span>
           </h2>
           <p className="mt-4 max-w-xl mx-auto text-gray-500 font-body font-light leading-relaxed">
-            Have a question about the rooms, dates or your trip to Hiriketiya? Send us a message and we'll get back to you.
+            Planning a stay or have a question? Send us a message — we're happy to help with your dates, rooms or anything you want to know about Hiriketiya.
           </p>
         </div>
 
@@ -75,7 +75,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-white/60 text-xs uppercase tracking-widest mb-0.5">Address</p>
-                    <p className="text-white text-sm font-medium">Kalpas Place, Hiriketiya<br />Dickwella, Sri Lanka</p>
+                    <p className="text-white text-sm font-medium">Kalpa's Place, Hiriketiya<br />Dickwella, Sri Lanka</p>
                   </div>
                 </div>
               </div>
@@ -203,9 +203,9 @@ export default function Contact() {
                   Send Enquiry
                 </button>
                 <p className="text-center text-xs text-gray-400 font-body">
-                  Prefer instant booking?{' '}
+                  Want to secure your stay?{' '}
                   <a href="https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                    Book on Booking.com
+                    Book directly through Booking.com
                   </a>
                 </p>
               </form>

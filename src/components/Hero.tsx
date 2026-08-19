@@ -91,7 +91,7 @@ export default function Hero() {
           <span className="italic font-normal">Place</span>
         </h1>
         <p className="fade-in-up fade-in-up-delay-3 max-w-xl text-base md:text-lg text-white/85 font-body font-light leading-relaxed text-shadow-sm mb-10">
-          A relaxed place to stay in Hiriketiya, just a short walk from the beach. Come for the surf, stay for the laid-back days, good food and beautiful surroundings.
+          Stay close to the beach, surf, cafés and everything that makes Hiriketiya special.
         </p>
         <div className="fade-in-up fade-in-up-delay-4 flex flex-col sm:flex-row gap-4 items-center">
           <a

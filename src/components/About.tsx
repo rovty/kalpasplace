@@ -9,18 +9,18 @@ const highlights = [
   },
   {
     icon: <Coffee size={22} />,
-    title: "Easy Days",
+    title: "Take It Easy",
     desc: "Good coffee, beach walks, long lunches and plenty of time to slow down.",
   },
   {
     icon: <Laptop size={22} />,
-    title: "Stay a Little Longer",
+    title: "Stay Longer",
     desc: "With Wi-Fi and a comfortable place to work, you don't have to rush your stay.",
   },
   {
     icon: <Sun size={22} />,
     title: "Life by the Coast",
-    desc: "Warm days, tropical surroundings and the beach close by make it easy to settle into the south coast lifestyle.",
+    desc: "Warm days, tropical surroundings and the beach close by make it easy to settle into the south coast.",
   },
 ];
 
@@ -51,8 +51,8 @@ export default function About() {
               About the Place
             </p>
             <h2 className="text-4xl md:text-5xl font-display text-gray-900 leading-tight mb-6">
-              Wake Up to the<br />
-              <span className="italic text-teal-700">Sound of Waves</span>
+              A Stay in the Heart of<br />
+              <span className="italic text-teal-700">Hiriketiya</span>
             </h2>
             <p className="text-gray-600 font-body font-light leading-relaxed mb-5 text-base">
               Hiriketiya is the kind of place where days are easy to fill. Start with a morning swim or surf, grab a coffee, spend the afternoon exploring the coast, and come back when the sun starts to set.
@@ -64,7 +64,7 @@ export default function About() {
               href="#rooms"
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-teal-700 text-white text-sm font-medium hover:bg-teal-800 transition-all duration-300 shadow-md hover:shadow-lg"
             >
-              See Our Rooms
+              Explore Our Rooms
             </a>
           </div>
 

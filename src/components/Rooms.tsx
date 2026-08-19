@@ -5,7 +5,7 @@ const rooms = [
   {
     name: 'Ocean Breeze Room',
     type: 'Standard',
-    desc: 'A bright and comfortable room with a relaxed tropical feel. A good choice for couples or solo travellers looking for an easy base in Hiriketiya.',
+    desc: 'A bright and comfortable room with a relaxed tropical feel — a simple place to come back to after a day at the beach.',
     price: 'From $45 / night',
     img: '/images/bedroom.jpg',
     features: ['Sea view', 'AC', 'En-suite bath', 'Free Wi-Fi'],
@@ -14,7 +14,7 @@ const rooms = [
   {
     name: 'Surf Suite',
     type: 'Suite',
-    desc: 'Our most spacious stay, made for slow mornings and relaxed evenings. Settle in after a day at the beach and enjoy your own space to unwind.',
+    desc: 'Our spacious suite for those who want a little more room to relax. Come back from the beach, slow down and enjoy your own private space.',
     price: 'From $85 / night',
     img: '/images/hotel-room.jpg',
     features: ['Panoramic view', 'King bed', 'Open shower', 'Deck'],
@@ -23,16 +23,16 @@ const rooms = [
   {
     name: 'Garden Bungalow',
     type: 'Bungalow',
-    desc: 'A private little space surrounded by greenery, ideal if you prefer a quieter stay. The extra space also makes it a comfortable option for longer visits.',
+    desc: 'Surrounded by greenery, the Garden Bungalow gives you a little more privacy and space — a comfortable choice for a longer stay.',
     price: 'From $65 / night',
     img: '/images/tropical-bungalow.jpg',
     features: ['Private garden', 'Kitchenette', 'Outdoor seating', 'Long stay deals'],
-    badge: 'Best for Nomads',
+    badge: 'Long Stay',
   },
   {
     name: 'Dormitory Pod',
     type: 'Shared',
-    desc: 'A simple, comfortable option for solo travellers who want to meet people while keeping their own private sleeping space.',
+    desc: 'A simple and comfortable option for solo travellers, with your own sleeping space and a chance to meet other travellers.',
     price: 'From $18 / night',
     img: '/images/suite.jpg',
     features: ['Private pods', 'Lockers', 'Social lounge', 'Budget-friendly'],
@@ -77,7 +77,7 @@ export default function Rooms() {
             Rooms & <span className="italic text-teal-700">Suites</span>
           </h2>
           <p className="mt-4 max-w-xl mx-auto text-gray-500 font-body font-light text-base leading-relaxed">
-            Choose the space that suits your stay - from a simple room for a few nights to a private bungalow for a little more space and quiet. Whatever you choose, Hiriketiya is right outside.
+            Choose the space that suits your stay, from a comfortable room for a few nights to a private bungalow when you want a little more space and privacy.
           </p>
         </div>
 

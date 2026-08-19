@@ -5,25 +5,25 @@ const experiences = [
   {
     icon: <Waves size={26} />,
     title: 'Surf Every Morning',
-    desc: 'Head down to the bay for an early surf, or simply grab a coffee and watch the waves from the beach.',
+    desc: 'Start the day in the water, or grab a coffee and watch the morning surf from the beach.',
     color: 'bg-blue-50 text-blue-700',
   },
   {
     icon: <Coffee size={26} />,
     title: 'Coffee & Co-Working',
-    desc: 'Hiriketiya has plenty of places for a good coffee and a few hours of work when you need to stay connected.',
+    desc: 'Grab a good coffee, find a quiet corner and get some work done when you need to stay connected.',
     color: 'bg-amber-50 text-amber-700',
   },
   {
     icon: <Dumbbell size={26} />,
-    title: 'Yoga & Wellness',
-    desc: 'Start the morning with a yoga session or take some time to slow down and reset.',
+    title: 'Slow Mornings',
+    desc: 'Start the morning with yoga, a quiet coffee or simply a little time to yourself.',
     color: 'bg-green-50 text-green-700',
   },
   {
     icon: <Utensils size={26} />,
     title: 'Sri Lankan Food',
-    desc: 'Try rice and curry, fresh seafood, tropical fruit and plenty of good Ceylon tea at the restaurants around Hiriketiya.',
+    desc: 'Try rice and curry, fresh seafood, tropical fruit and a proper cup of Ceylon tea at one of the restaurants around Hiriketiya.',
     color: 'bg-orange-50 text-orange-700',
   },
   {
@@ -35,7 +35,7 @@ const experiences = [
   {
     icon: <Camera size={26} />,
     title: 'Sunset',
-    desc: 'When the day starts to cool down, head to the beach and watch the sky change over the bay.',
+    desc: 'As the day cools down, head to the beach and watch the last light over the bay.',
     color: 'bg-rose-50 text-rose-700',
   },
 ];
@@ -68,7 +68,7 @@ export default function Experience() {
             Things to Do Around <span className="italic text-teal-700">Hiriketiya</span>
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-gray-500 font-body font-light text-base leading-relaxed">
-            There's plenty to do around the bay, but there's no need to plan every minute. Surf, eat well, explore the coast or simply take the afternoon slow.
+            Surf, eat well, explore the coast or simply take the day as it comes.
           </p>
         </div>
 

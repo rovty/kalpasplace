@@ -9,10 +9,10 @@ export default function Footer() {
       <div className="bg-teal-700 py-14">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="font-display text-3xl md:text-4xl text-white mb-4">
-            Your Hiriketiya <span className="italic">Stay Starts Here</span>
+            Make Yourself at Home in <span className="italic">Hiriketiya</span>
           </h2>
           <p className="text-teal-100 font-body font-light mb-8 max-w-xl mx-auto leading-relaxed">
-            Slow mornings, warm evenings, good food and the beach nearby. We'd love to have you stay with us.
+            Beach mornings, good food, warm evenings and plenty of time to slow down. We hope to welcome you to Kalpa's Place.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -41,7 +41,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <p className="font-display text-xl text-white font-bold mb-4">Kalpa's Place</p>
             <p className="text-gray-400 text-sm font-body font-light leading-relaxed max-w-xs">
-              A relaxed place to stay in Hiriketiya, Sri Lanka - close to the beach and everything that makes the south coast special.
+              A relaxed place to stay in Hiriketiya, close to the beach and the best of Sri Lanka's south coast.
             </p>
             <div className="flex gap-3 mt-6">
               <a href="#" className="w-9 h-9 rounded-lg bg-white/5 hover:bg-teal-700/40 flex items-center justify-center transition-colors text-gray-400 hover:text-white" aria-label="Instagram">

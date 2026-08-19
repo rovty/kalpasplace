@@ -29,7 +29,7 @@ export default function DroneVideo() {
             <span className="italic text-teal-700">From Above</span>
           </h2>
           <p className="mt-4 max-w-xl mx-auto text-gray-500 font-body font-light text-base leading-relaxed">
-            A little bay, a lot of greenery and the Indian Ocean just beyond it. This is the view that makes Hiriketiya hard to leave.
+            A small bay, tropical surroundings and the Indian Ocean right outside. Hiriketiya is easy to fall into — and even harder to leave.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export default function DroneVideo() {
         <div className="reveal grid grid-cols-2 md:grid-cols-4 gap-px mt-12 bg-gray-200 rounded-2xl overflow-hidden shadow-sm">
           {[
             { label: 'Walk to Beach', value: '< 2 min' },
-            { label: 'Surf Season', value: 'Year Round' },
+            { label: 'Tropical Weather', value: 'All Year' },
             { label: 'Check-in', value: '2:00 PM' },
             { label: 'Check-out', value: '11:00 AM' },
           ].map((stat, i) => (

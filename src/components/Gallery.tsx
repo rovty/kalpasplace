@@ -79,7 +79,7 @@ export default function Gallery() {
             A Look Around <span className="italic text-teal-700">Kalpa's Place</span>
           </h2>
           <p className="mt-3 text-gray-500 text-sm font-body">
-            A few moments from the rooms, the beach and life around Hiriketiya.
+            Take a look around — the rooms, the beach and a little of everyday life in Hiriketiya.
           </p>
         </div>
 
