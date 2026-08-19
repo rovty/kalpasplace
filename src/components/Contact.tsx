@@ -5,6 +5,7 @@ export default function Contact() {
   const sectionRef = useRef<HTMLElement>(null);
   const [form, setForm] = useState({ name: '', email: '', checkin: '', checkout: '', message: '' });
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -20,9 +21,24 @@ export default function Contact() {
     return () => observer.disconnect();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSent(true);
+    setSending(true);
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        access_key: '90980826-4200-4893-b574-a07eaffababf',
+        subject: `New enquiry from ${form.name}`,
+        name: form.name,
+        email: form.email,
+        checkin: form.checkin,
+        checkout: form.checkout,
+        message: form.message,
+      }),
+    });
+    if (res.ok) setSent(true);
+    setSending(false);
   };
 
   const inputClass =
@@ -197,9 +213,10 @@ export default function Contact() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full py-3.5 rounded-xl bg-teal-700 text-white font-medium text-sm tracking-wide hover:bg-teal-800 transition-all duration-300 shadow-md hover:shadow-lg"
+                  disabled={sending}
+                  className="w-full py-3.5 rounded-xl bg-teal-700 text-white font-medium text-sm tracking-wide hover:bg-teal-800 disabled:opacity-60 transition-all duration-300 shadow-md hover:shadow-lg"
                 >
-                  Send Enquiry
+                  {sending ? 'Sending...' : 'Send Enquiry'}
                 </button>
 
               </form>
