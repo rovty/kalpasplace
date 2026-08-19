@@ -44,7 +44,7 @@ export default function Contact() {
         </div>
 
         <div className="grid md:grid-cols-5 gap-12">
-          {/* Left — Contact info */}
+          {/* Left - Contact info */}
           <div className="reveal md:col-span-2 flex flex-col gap-6">
             <div className="bg-teal-800 rounded-3xl p-8 text-white relative overflow-hidden">
               <div className="absolute top-0 right-0 w-40 h-40 rounded-full bg-white/5 -translate-y-1/2 translate-x-1/2" />
@@ -112,7 +112,7 @@ export default function Contact() {
             </a>
           </div>
 
-          {/* Right — Enquiry form */}
+          {/* Right - Enquiry form */}
           <div className="reveal md:col-span-3">
             {sent ? (
               <div className="h-full flex flex-col items-center justify-center text-center py-12">

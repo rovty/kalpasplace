@@ -77,7 +77,7 @@ export default function Rooms() {
             Rooms & <span className="italic text-teal-700">Suites</span>
           </h2>
           <p className="mt-4 max-w-xl mx-auto text-gray-500 font-body font-light text-base leading-relaxed">
-            Choose the space that suits your stay — from a simple room for a few nights to a private bungalow for a little more space and quiet. Whatever you choose, Hiriketiya is right outside.
+            Choose the space that suits your stay - from a simple room for a few nights to a private bungalow for a little more space and quiet. Whatever you choose, Hiriketiya is right outside.
           </p>
         </div>
 

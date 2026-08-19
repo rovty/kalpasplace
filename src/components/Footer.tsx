@@ -41,7 +41,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <p className="font-display text-xl text-white font-bold mb-4">Kalpa's Place</p>
             <p className="text-gray-400 text-sm font-body font-light leading-relaxed max-w-xs">
-              A relaxed place to stay in Hiriketiya, Sri Lanka — close to the beach and everything that makes the south coast special.
+              A relaxed place to stay in Hiriketiya, Sri Lanka - close to the beach and everything that makes the south coast special.
             </p>
             <div className="flex gap-3 mt-6">
               <a href="#" className="w-9 h-9 rounded-lg bg-white/5 hover:bg-teal-700/40 flex items-center justify-center transition-colors text-gray-400 hover:text-white" aria-label="Instagram">
