@@ -113,13 +113,16 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-12 pt-6 border-t border-white/10 flex flex-col items-center gap-3 text-center">
           <div className="flex items-center gap-2 text-gray-500 text-sm font-body">
             <Waves size={14} className="text-teal-600" />
             <span>© {year} Kalpa's Place. All rights reserved.</span>
           </div>
           <p className="text-gray-600 text-xs font-body">
-            Hiriketiya Beach, Dickwella, Southern Province, Sri Lanka
+            Powered by{' '}
+            <a href="https://rovty.com/" target="_blank" rel="noopener noreferrer" className="text-teal-500 hover:text-teal-400 transition-colors">
+              Rovty (Pvt) Ltd.
+            </a>
           </p>
         </div>
       </div>
