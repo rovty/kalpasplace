@@ -3,19 +3,19 @@ import { ChevronDown } from 'lucide-react';
 
 const slides = [
   {
-    url: 'https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    url: '/images/beach-aerial.jpg',
     alt: 'Hiriketiya Beach sunrise',
   },
   {
-    url: 'https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    url: '/images/tropical-beach.jpg',
     alt: 'Tropical beach Sri Lanka',
   },
   {
-    url: 'https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    url: '/images/beach-waves.jpg',
     alt: 'Beach waves surfing',
   },
   {
-    url: 'https://images.pexels.com/photos/1078983/pexels-photo-1078983.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    url: '/images/resort-palms.jpg',
     alt: 'Tropical resort palm trees',
   },
 ];

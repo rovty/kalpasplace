@@ -11,15 +11,8 @@ const links = [
 ];
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState('home');
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60);
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
 
   useEffect(() => {
     const sections = links.map(l => l.href.replace('#', ''));
@@ -38,16 +31,12 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-400 ${
-        scrolled ? 'nav-scrolled' : 'bg-transparent'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 nav-scrolled"
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <a href="#home" className="group">
-          <p className={`text-xl font-bold tracking-wide font-display leading-tight transition-colors duration-300 ${
-            scrolled ? 'text-teal-900' : 'text-white drop-shadow-md'
-          }`}>Kalpa's Place</p>
+          <p className="text-xl font-bold tracking-wide font-display leading-tight text-teal-900">Kalpa's Place</p>
         </a>
 
         {/* Desktop nav */}
@@ -57,13 +46,9 @@ export default function Navbar() {
               <a
                 href={link.href}
                 className={`text-sm tracking-wide transition-all duration-200 relative pb-0.5 ${
-                  scrolled
-                    ? active === link.href.replace('#', '')
-                      ? 'text-teal-700 font-medium'
-                      : 'text-gray-600 hover:text-teal-700'
-                    : active === link.href.replace('#', '')
-                    ? 'text-white font-medium'
-                    : 'text-white/90 hover:text-white drop-shadow-md'
+                  active === link.href.replace('#', '')
+                    ? 'text-teal-700 font-medium'
+                    : 'text-gray-600 hover:text-teal-700'
                 } after:absolute after:bottom-0 after:left-0 after:h-px after:transition-all after:duration-300 ${
                   active === link.href.replace('#', '')
                     ? 'after:w-full after:bg-current'
@@ -81,20 +66,14 @@ export default function Navbar() {
           href="https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html"
           target="_blank"
           rel="noopener noreferrer"
-          className={`hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
-            scrolled
-              ? 'bg-teal-700 text-white hover:bg-teal-800 shadow-md hover:shadow-lg'
-              : 'bg-white/20 backdrop-blur-sm border border-white/50 text-white hover:bg-white/30 drop-shadow-md'
-          }`}
+          className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium bg-teal-700 text-white hover:bg-teal-800 shadow-md hover:shadow-lg transition-all duration-300"
         >
           Book Now
         </a>
 
         {/* Mobile toggle */}
         <button
-          className={`md:hidden p-2 rounded-lg transition-colors ${
-            scrolled ? 'text-teal-800' : 'text-white drop-shadow-md'
-          }`}
+          className="md:hidden p-2 rounded-lg text-teal-800"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >

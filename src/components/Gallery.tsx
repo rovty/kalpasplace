@@ -3,37 +3,37 @@ import { X, ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react';
 
 const images = [
   {
-    url: 'https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=900',
+    url: '/images/beach-aerial.jpg',
     alt: 'Hiriketiya beach aerial view',
     span: 'col-span-2 row-span-2',
   },
   {
-    url: 'https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&w=600',
+    url: '/images/surfer.jpg',
     alt: 'Surfer on wave',
     span: '',
   },
   {
-    url: 'https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg?auto=compress&cs=tinysrgb&w=600',
+    url: '/images/tropical-palms.jpg',
     alt: 'Tropical palm trees beach',
     span: '',
   },
   {
-    url: 'https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&w=600',
+    url: '/images/beach-coffee.jpg',
     alt: 'Beach coffee relaxation',
     span: '',
   },
   {
-    url: 'https://images.pexels.com/photos/1078983/pexels-photo-1078983.jpeg?auto=compress&cs=tinysrgb&w=600',
+    url: '/images/resort-palms.jpg',
     alt: 'Tropical resort pool',
     span: '',
   },
   {
-    url: 'https://images.pexels.com/photos/2177482/pexels-photo-2177482.jpeg?auto=compress&cs=tinysrgb&w=600',
+    url: '/images/tropical-bungalow.jpg',
     alt: 'Tropical bungalow',
     span: '',
   },
   {
-    url: 'https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=600',
+    url: '/images/beach-waves.jpg',
     alt: 'Ocean waves',
     span: '',
   },
@@ -129,7 +129,7 @@ export default function Gallery() {
             <ChevronLeft size={24} />
           </button>
           <img
-            src={images[lightbox].url.replace('w=900', 'w=1600').replace('w=600', 'w=1200')}
+            src={images[lightbox].url}
             alt={images[lightbox].alt}
             className="max-w-full max-h-[85vh] object-contain rounded-xl shadow-2xl"
             onClick={e => e.stopPropagation()}

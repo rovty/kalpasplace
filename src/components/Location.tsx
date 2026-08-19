@@ -71,28 +71,17 @@ export default function Location() {
             </div>
           </div>
 
-          {/* Map placeholder */}
+          {/* Google Map */}
           <div className="reveal">
-            <div className="rounded-3xl overflow-hidden shadow-xl border border-gray-200 bg-teal-900/5 aspect-[4/3] relative">
-              {/* Placeholder for Google Maps embed */}
-              <div className="absolute inset-0 bg-gradient-to-br from-teal-50 to-blue-50 flex flex-col items-center justify-center">
-                <div className="w-16 h-16 rounded-full bg-teal-700/10 flex items-center justify-center mb-4">
-                  <MapPin size={28} className="text-teal-700" />
-                </div>
-                <p className="font-display text-lg text-teal-900 mb-1">Hiriketiya Beach</p>
-                <p className="text-gray-500 text-sm font-body mb-6">6.0076° N, 80.6052° E</p>
-                <a
-                  href="https://maps.google.com/?q=Hiriketiya+Beach+Sri+Lanka"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-5 py-2.5 rounded-full bg-teal-700 text-white text-sm font-medium hover:bg-teal-800 transition-colors shadow-md"
-                >
-                  Open in Google Maps
-                </a>
-                <p className="mt-8 text-gray-300 text-xs font-body italic">
-                  Map embed — add your Google Maps iframe here
-                </p>
-              </div>
+            <div className="rounded-3xl overflow-hidden shadow-xl border border-gray-200 aspect-[4/3]">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4143.906948309596!2d80.70037297518267!3d5.963010294021696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae1366c1ca3cfa7%3A0xe54cafe25725cea9!2sKalpa%20Place!5e1!3m2!1sen!2slk!4v1787110011185!5m2!1sen!2slk"
+                title="Kalpa's Place Location"
+                className="w-full h-full border-0"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+              />
             </div>
           </div>
         </div>

@@ -76,21 +76,21 @@ export default function About() {
           <div className="reveal grid grid-cols-2 gap-3 h-[480px]">
             <div className="overflow-hidden rounded-2xl row-span-2">
               <img
-                src="https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/images/tropical-palms.jpg"
                 alt="Tropical beach palm trees"
                 className="w-full h-full object-cover slide-img"
               />
             </div>
             <div className="overflow-hidden rounded-2xl">
               <img
-                src="https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/images/surfer.jpg"
                 alt="Surfer on wave"
                 className="w-full h-full object-cover slide-img"
               />
             </div>
             <div className="overflow-hidden rounded-2xl">
               <img
-                src="https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/images/beach-coffee.jpg"
                 alt="Beach coffee and relaxation"
                 className="w-full h-full object-cover slide-img"
               />
