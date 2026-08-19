@@ -89,8 +89,8 @@ export default function Footer() {
                 11:00 AM
               </li>
               <li className="pt-1">
-                <a href="mailto:hello@kalpasplace.lk" className="hover:text-teal-400 transition-colors">
-                  hello@kalpasplace.lk
+                <a href="mailto:hello@kalpasplacehiri.lk" className="hover:text-teal-400 transition-colors">
+                  hello@kalpasplacehiri.lk
                 </a>
               </li>
               <li>

@@ -60,13 +60,13 @@ export default function Contact() {
                     <p className="text-white text-sm font-medium">+94 776 765 556</p>
                   </div>
                 </a>
-                <a href="mailto:hello@kalpasplace.lk" className="flex items-start gap-4 group">
+                <a href="mailto:hello@kalpasplacehiri.lk" className="flex items-start gap-4 group">
                   <div className="w-9 h-9 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0 group-hover:bg-white/25 transition-colors">
                     <Mail size={16} />
                   </div>
                   <div>
                     <p className="text-white/60 text-xs uppercase tracking-widest mb-0.5">Email</p>
-                    <p className="text-white text-sm font-medium">hello@kalpasplace.lk</p>
+                    <p className="text-white text-sm font-medium">hello@kalpasplacehiri.lk</p>
                   </div>
                 </a>
                 <div className="flex items-start gap-4">
