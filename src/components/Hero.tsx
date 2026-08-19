@@ -91,8 +91,7 @@ export default function Hero() {
           <span className="italic font-normal">Place</span>
         </h1>
         <p className="fade-in-up fade-in-up-delay-3 max-w-xl text-base md:text-lg text-white/85 font-body font-light leading-relaxed text-shadow-sm mb-10">
-          A boutique beach retreat where the surf meets slow living —
-          your home away from home on Sri Lanka's south coast.
+          A relaxed place to stay in Hiriketiya, just a short walk from the beach. Come for the surf, stay for the laid-back days, good food and beautiful surroundings.
         </p>
         <div className="fade-in-up fade-in-up-delay-4 flex flex-col sm:flex-row gap-4 items-center">
           <a
@@ -107,7 +106,7 @@ export default function Hero() {
             href="#about"
             className="px-8 py-3.5 rounded-full border border-white/50 text-white hover:bg-white/15 font-medium tracking-wide transition-all duration-300 backdrop-blur-sm"
           >
-            Explore
+            Explore Rooms
           </a>
         </div>
 

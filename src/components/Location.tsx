@@ -37,11 +37,10 @@ export default function Location() {
               Find Us
             </p>
             <h2 className="text-4xl md:text-5xl font-display text-gray-900 leading-tight mb-6">
-              Perfect <span className="italic text-teal-700">Location</span>
+              Stay Close to <span className="italic text-teal-700">Hiriketiya</span>
             </h2>
             <p className="text-gray-600 font-body font-light leading-relaxed mb-8">
-              Kalpa's Place is nestled right beside Hiriketiya Beach on Sri Lanka's south coast —
-              just steps from the waves, surrounded by coconut palms and the warm Indian Ocean breeze.
+              Kalpa's Place is in Hiriketiya, on Sri Lanka's south coast. The beach, cafés and restaurants are all part of the neighbourhood, while the wider south coast is easy to explore from here.
             </p>
 
             <div className="flex items-start gap-3 mb-6 p-4 bg-white rounded-2xl shadow-sm border border-gray-100">

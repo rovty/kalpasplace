@@ -5,37 +5,37 @@ const experiences = [
   {
     icon: <Waves size={26} />,
     title: 'Surf Every Morning',
-    desc: "Hiriketiya's horseshoe bay produces consistent, beginner-friendly waves. Board rentals and lessons are available at the beach.",
+    desc: 'Head down to the bay for an early surf, or simply grab a coffee and watch the waves from the beach.',
     color: 'bg-blue-50 text-blue-700',
   },
   {
     icon: <Coffee size={26} />,
     title: 'Coffee & Co-Working',
-    desc: 'Start your day at one of the charming beach cafés or use our in-house workspace with fast fiber internet.',
+    desc: 'Hiriketiya has plenty of places for a good coffee and a few hours of work when you need to stay connected.',
     color: 'bg-amber-50 text-amber-700',
   },
   {
     icon: <Dumbbell size={26} />,
     title: 'Yoga & Wellness',
-    desc: 'Join sunrise yoga sessions on the terrace or visit one of the nearby studios offering daily classes and retreats.',
+    desc: 'Start the morning with a yoga session or take some time to slow down and reset.',
     color: 'bg-green-50 text-green-700',
   },
   {
     icon: <Utensils size={26} />,
-    title: 'Sri Lankan Cuisine',
-    desc: 'Savour authentic rice and curry, fresh seafood, tropical fruits, and the finest Ceylon tea steps from our door.',
+    title: 'Sri Lankan Food',
+    desc: 'Try rice and curry, fresh seafood, tropical fruit and plenty of good Ceylon tea at the restaurants around Hiriketiya.',
     color: 'bg-orange-50 text-orange-700',
   },
   {
     icon: <Bike size={26} />,
     title: 'Explore the Coast',
-    desc: 'Rent a bike or scooter and discover nearby beaches like Tangalle and Dickwella, ancient temples, and jungle waterfalls.',
+    desc: "Rent a scooter and explore the beaches, small towns and quieter corners of Sri Lanka's south coast.",
     color: 'bg-teal-50 text-teal-700',
   },
   {
     icon: <Camera size={26} />,
-    title: 'Golden Hour',
-    desc: "Sri Lanka's south coast serves up breathtaking sunsets every evening — grab a coconut and watch the sky turn orange.",
+    title: 'Sunset',
+    desc: 'When the day starts to cool down, head to the beach and watch the sky change over the bay.',
     color: 'bg-rose-50 text-rose-700',
   },
 ];
@@ -65,10 +65,10 @@ export default function Experience() {
             Life at Hiriketiya
           </p>
           <h2 className="text-4xl md:text-5xl font-display text-gray-900 leading-tight">
-            The <span className="italic text-teal-700">Experience</span>
+            Things to Do Around <span className="italic text-teal-700">Hiriketiya</span>
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-gray-500 font-body font-light text-base leading-relaxed">
-            Hiriketiya isn't just a beach — it's a lifestyle. Here's what a typical day at Kalpa's Place could look like.
+            There's plenty to do around the bay, but there's no need to plan every minute. Surf, eat well, explore the coast or simply take the afternoon slow.
           </p>
         </div>
 
@@ -88,19 +88,7 @@ export default function Experience() {
           ))}
         </div>
 
-        {/* Quote */}
-        <div className="reveal mt-16 bg-teal-800 rounded-3xl px-8 py-12 md:py-16 text-center relative overflow-hidden">
-          <div className="absolute inset-0 opacity-5">
-            <div className="absolute top-4 left-8 text-white font-display text-[180px] leading-none select-none">"</div>
-          </div>
-          <blockquote className="relative z-10 text-white/90 font-display italic text-2xl md:text-3xl leading-relaxed max-w-3xl mx-auto">
-            "This place is fantastic for many reasons — one of Sri Lanka's best surf spots, ideal for those
-            who enjoy a slower pace, great coffee, yoga, and morning surf sessions."
-          </blockquote>
-          <p className="mt-6 text-teal-300 text-sm font-body tracking-widest uppercase">
-            — Travel Guide to Sri Lanka
-          </p>
-        </div>
+
       </div>
     </section>
   );

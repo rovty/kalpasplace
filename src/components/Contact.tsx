@@ -36,11 +36,10 @@ export default function Contact() {
             Get In Touch
           </p>
           <h2 className="text-4xl md:text-5xl font-display text-gray-900 leading-tight">
-            Plan Your <span className="italic text-teal-700">Stay</span>
+            Planning a <span className="italic text-teal-700">Stay?</span>
           </h2>
           <p className="mt-4 max-w-xl mx-auto text-gray-500 font-body font-light leading-relaxed">
-            Have questions? Ready to book? We'd love to hear from you.
-            You can also book directly on Booking.com for instant confirmation.
+            Have a question about the rooms, dates or your trip to Hiriketiya? Send us a message and we'll get back to you.
           </p>
         </div>
 
@@ -191,7 +190,7 @@ export default function Contact() {
                   </label>
                   <textarea
                     rows={5}
-                    placeholder="Tell us about your stay, any questions, or special requests..."
+                    placeholder="Tell us your dates and anything you'd like to know."
                     value={form.message}
                     onChange={e => setForm({ ...form, message: e.target.value })}
                     className={`${inputClass} resize-none`}

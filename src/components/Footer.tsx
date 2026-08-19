@@ -9,11 +9,10 @@ export default function Footer() {
       <div className="bg-teal-700 py-14">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="font-display text-3xl md:text-4xl text-white mb-4">
-            Ready to Feel the <span className="italic">Hiriketiya Magic?</span>
+            Your Hiriketiya <span className="italic">Stay Starts Here</span>
           </h2>
           <p className="text-teal-100 font-body font-light mb-8 max-w-xl mx-auto leading-relaxed">
-            Surf in the morning, sip coffee watching the waves, fall asleep to the sound of the ocean.
-            Your dream stay in Sri Lanka is just a click away.
+            Slow mornings, warm evenings, good food and the beach nearby. We'd love to have you stay with us.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -23,7 +22,7 @@ export default function Footer() {
               className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-white text-teal-800 font-medium text-sm hover:bg-teal-50 transition-all duration-300 shadow-lg"
             >
               <ExternalLink size={15} />
-              Book on Booking.com
+              Book Your Stay
             </a>
             <a
               href="#contact"
@@ -42,8 +41,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <p className="font-display text-xl text-white font-bold mb-4">Kalpa's Place</p>
             <p className="text-gray-400 text-sm font-body font-light leading-relaxed max-w-xs">
-              A boutique beach retreat beside one of Sri Lanka's finest surf spots.
-              Perfect for surfers, nomads, and slow travelers seeking sun, soul, and simplicity.
+              A relaxed place to stay in Hiriketiya, Sri Lanka — close to the beach and everything that makes the south coast special.
             </p>
             <div className="flex gap-3 mt-6">
               <a href="#" className="w-9 h-9 rounded-lg bg-white/5 hover:bg-teal-700/40 flex items-center justify-center transition-colors text-gray-400 hover:text-white" aria-label="Instagram">

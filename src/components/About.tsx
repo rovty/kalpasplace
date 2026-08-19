@@ -4,23 +4,23 @@ import { Waves, Coffee, Laptop, Sun } from 'lucide-react';
 const highlights = [
   {
     icon: <Waves size={22} />,
-    title: "World-Class Surf",
-    desc: "One of Sri Lanka's best surf spots — ideal for beginners and experienced surfers alike.",
+    title: "Surf Nearby",
+    desc: "Hiriketiya's bay is a great place to get in the water, whether you're picking up a board for the first time or already love to surf.",
   },
   {
     icon: <Coffee size={22} />,
-    title: "Slow & Soulful",
-    desc: "Great coffee, morning yoga, peaceful vibes. No wild party scene — just pure relaxation.",
+    title: "Easy Days",
+    desc: "Good coffee, beach walks, long lunches and plenty of time to slow down.",
   },
   {
     icon: <Laptop size={22} />,
-    title: "Digital Nomad Ready",
-    desc: "Fast Wi-Fi and a co-working setup make it easy to stay weeks or even months.",
+    title: "Stay a Little Longer",
+    desc: "With Wi-Fi and a comfortable place to work, you don't have to rush your stay.",
   },
   {
     icon: <Sun size={22} />,
-    title: "Year-Round Sun",
-    desc: "Sri Lanka's south coast enjoys warm tropical weather with stunning golden sunsets.",
+    title: "Life by the Coast",
+    desc: "Warm days, tropical surroundings and the beach close by make it easy to settle into the south coast lifestyle.",
   },
 ];
 
@@ -55,14 +55,10 @@ export default function About() {
               <span className="italic text-teal-700">Sound of Waves</span>
             </h2>
             <p className="text-gray-600 font-body font-light leading-relaxed mb-5 text-base">
-              Hiriketiya is one of Sri Lanka's most beloved beach towns — and Kalpa's Place sits right at
-              its heart. This charming horseshoe bay on the island's south coast has captured the hearts
-              of surfers, slow travelers, and digital nomads from across the world.
+              Hiriketiya is the kind of place where days are easy to fill. Start with a morning swim or surf, grab a coffee, spend the afternoon exploring the coast, and come back when the sun starts to set.
             </p>
             <p className="text-gray-600 font-body font-light leading-relaxed mb-8 text-base">
-              With its relaxed pace, great coffee culture, morning yoga sessions, and consistent surf breaks,
-              Hiriketiya offers something truly rare: a place where time slows down and life feels beautifully simple.
-              Whether you stay for a weekend or a month, Kalpa's Place will feel like home.
+              Kalpa's Place gives you a comfortable base to enjoy it all. We're close to the beach, surrounded by the cafés, restaurants and relaxed atmosphere that make Hiriketiya special.
             </p>
             <a
               href="#rooms"

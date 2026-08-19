@@ -76,10 +76,10 @@ export default function Gallery() {
             Photo Gallery
           </p>
           <h2 className="text-4xl md:text-5xl font-display text-gray-900">
-            Life at <span className="italic text-teal-700">Kalpa's Place</span>
+            A Look Around <span className="italic text-teal-700">Kalpa's Place</span>
           </h2>
-          <p className="mt-3 text-gray-400 text-sm font-body">
-            Click any photo to view full size
+          <p className="mt-3 text-gray-500 text-sm font-body">
+            A few moments from the rooms, the beach and life around Hiriketiya.
           </p>
         </div>
 
