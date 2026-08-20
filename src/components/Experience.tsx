@@ -1,42 +1,42 @@
 import { useEffect, useRef } from 'react';
-import { Waves, Coffee, Dumbbell, Utensils, Bike, Camera } from 'lucide-react';
+import { Waves, Palmtree, Sunset, Landmark, Wine, Ship } from 'lucide-react';
 
 const experiences = [
   {
     icon: <Waves size={26} />,
-    title: 'Surf Every Morning',
-    desc: 'Start the day in the water, or grab a coffee and watch the morning surf from the beach.',
+    title: 'Hiriketiya Beach',
+    desc: 'Surfing, swimming, relaxing and beach cafés — right on your doorstep.',
     color: 'bg-blue-50 text-blue-700',
   },
   {
-    icon: <Coffee size={26} />,
-    title: 'Coffee & Co-Working',
-    desc: 'Grab a good coffee, find a quiet corner and get some work done when you need to stay connected.',
-    color: 'bg-amber-50 text-amber-700',
-  },
-  {
-    icon: <Dumbbell size={26} />,
-    title: 'Slow Mornings',
-    desc: 'Start the morning with yoga, a quiet coffee or simply a little time to yourself.',
-    color: 'bg-green-50 text-green-700',
-  },
-  {
-    icon: <Utensils size={26} />,
-    title: 'Sri Lankan Food',
-    desc: 'Try rice and curry, fresh seafood, tropical fruit and a proper cup of Ceylon tea at one of the restaurants around Hiriketiya.',
-    color: 'bg-orange-50 text-orange-700',
-  },
-  {
-    icon: <Bike size={26} />,
-    title: 'Explore the Coast',
-    desc: "Rent a scooter and explore the beaches, small towns and quieter corners of Sri Lanka's south coast.",
+    icon: <Palmtree size={26} />,
+    title: 'Blue Beach Island',
+    desc: 'A beautiful small island with clear water, great for swimming and photos.',
     color: 'bg-teal-50 text-teal-700',
   },
   {
-    icon: <Camera size={26} />,
-    title: 'Sunset',
-    desc: 'As the day cools down, head to the beach and watch the last light over the bay.',
+    icon: <Sunset size={26} />,
+    title: 'Dikwella Beach',
+    desc: 'A quieter beach for relaxing and watching the sunset.',
+    color: 'bg-amber-50 text-amber-700',
+  },
+  {
+    icon: <Landmark size={26} />,
+    title: 'Mulkirigala Rock Temple',
+    desc: 'Ancient Buddhist temple with impressive rock formations and views.',
+    color: 'bg-orange-50 text-orange-700',
+  },
+  {
+    icon: <Wine size={26} />,
+    title: 'Smoke & Bitters',
+    desc: 'Famous cocktail bar and smokehouse, perfect for an evening experience.',
     color: 'bg-rose-50 text-rose-700',
+  },
+  {
+    icon: <Ship size={26} />,
+    title: 'Whale Watching in Mirissa',
+    desc: 'A popular day trip for seeing whales and dolphins.',
+    color: 'bg-green-50 text-green-700',
   },
 ];
 
@@ -62,13 +62,13 @@ export default function Experience() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="reveal text-center mb-16">
           <p className="text-xs tracking-[0.25em] uppercase text-teal-600 font-body mb-3">
-            Life at Hiriketiya
+            Explore the Area
           </p>
           <h2 className="text-4xl md:text-5xl font-display text-gray-900 leading-tight">
-            Things to Do Around <span className="italic text-teal-700">Hiriketiya</span>
+            Discover What's Around <span className="italic text-teal-700">Hiriketiya</span>
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-gray-500 font-body font-light text-base leading-relaxed">
-            Surf, eat well, explore the coast or simply take the day as it comes.
+            From golden beaches and ancient temples to whale watching and sunset cocktails — there's plenty to see and do nearby.
           </p>
         </div>
 
