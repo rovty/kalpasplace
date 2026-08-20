@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Waves, Palmtree, Sunset, Landmark, Wine, Ship } from 'lucide-react';
+import { Waves, Palmtree, Sunset, TreePalm, Wine, Ship } from 'lucide-react';
 
 const experiences = [
   {
@@ -21,10 +21,10 @@ const experiences = [
     color: 'bg-amber-50 text-amber-700',
   },
   {
-    icon: <Landmark size={26} />,
-    title: 'Mulkirigala Rock Temple',
-    desc: 'Ancient Buddhist temple with impressive rock formations and views.',
-    color: 'bg-orange-50 text-orange-700',
+    icon: <TreePalm size={26} />,
+    title: 'Jungle Beach',
+    desc: 'A hidden beach tucked between rocks and jungle — peaceful, scenic and perfect for a swim.',
+    color: 'bg-emerald-50 text-emerald-700',
   },
   {
     icon: <Wine size={26} />,

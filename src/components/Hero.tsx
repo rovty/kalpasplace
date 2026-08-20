@@ -83,18 +83,20 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
-        <img
-          src="/images/logo.png"
-          alt="Kalpa's Place logo"
-          className="fade-in-up fade-in-up-delay-1 w-24 h-24 md:w-32 md:h-32 rounded-full object-contain mb-6 drop-shadow-lg"
-        />
         <p className="fade-in-up fade-in-up-delay-1 text-xs md:text-sm tracking-[0.25em] uppercase text-white/80 mb-4 font-body text-shadow-sm">
           Hiriketiya Beach · Sri Lanka
         </p>
-        <h1 className="fade-in-up fade-in-up-delay-2 text-5xl md:text-7xl lg:text-8xl font-display text-white text-shadow leading-tight mb-6">
-          Kalpa's<br />
-          <span className="italic font-normal">Place</span>
-        </h1>
+        <div className="fade-in-up fade-in-up-delay-2 flex items-center gap-5 md:gap-8 mb-6">
+          <img
+            src="/images/logo.png"
+            alt="Kalpa's Place logo"
+            className="w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full object-contain drop-shadow-2xl"
+          />
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-display text-white text-shadow leading-tight text-left">
+            Kalpa's<br />
+            <span className="italic font-normal">Place</span>
+          </h1>
+        </div>
         <p className="fade-in-up fade-in-up-delay-3 max-w-xl text-base md:text-lg text-white/85 font-body font-light leading-relaxed text-shadow-sm mb-10">
           Stay close to the beach, surf, cafés and everything that makes Hiriketiya special.
         </p>
