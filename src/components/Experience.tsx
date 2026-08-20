@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Waves, Palmtree, Sunset, TreePalm, Wine, Ship } from 'lucide-react';
+import { Waves, Palmtree, Sunset, TreePine, Wine, Ship } from 'lucide-react';
 
 const experiences = [
   {
@@ -21,7 +21,7 @@ const experiences = [
     color: 'bg-amber-50 text-amber-700',
   },
   {
-    icon: <TreePalm size={26} />,
+    icon: <TreePine size={26} />,
     title: 'Jungle Beach',
     desc: 'A hidden beach tucked between rocks and jungle - peaceful, scenic and perfect for a swim.',
     color: 'bg-emerald-50 text-emerald-700',
