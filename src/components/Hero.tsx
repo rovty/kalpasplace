@@ -83,6 +83,11 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+        <img
+          src="/images/logo.png"
+          alt="Kalpa's Place logo"
+          className="fade-in-up fade-in-up-delay-1 w-24 h-24 md:w-32 md:h-32 rounded-full object-contain mb-6 drop-shadow-lg"
+        />
         <p className="fade-in-up fade-in-up-delay-1 text-xs md:text-sm tracking-[0.25em] uppercase text-white/80 mb-4 font-body text-shadow-sm">
           Hiriketiya Beach · Sri Lanka
         </p>

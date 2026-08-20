@@ -39,7 +39,10 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-2">
-            <p className="font-display text-xl text-white font-bold mb-4">Kalpa's Place</p>
+            <div className="flex items-center gap-4 mb-4">
+              <img src="/images/logo.png" alt="Kalpa's Place logo" className="w-14 h-14 rounded-full object-contain" />
+              <p className="font-display text-xl text-white font-bold">Kalpa's Place</p>
+            </div>
             <p className="text-gray-400 text-sm font-body font-light leading-relaxed max-w-xs">
               A relaxed place to stay in Hiriketiya, close to the beach and the best of Sri Lanka's south coast.
             </p>
