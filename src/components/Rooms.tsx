@@ -5,7 +5,7 @@ const rooms = [
   {
     name: 'Ocean Breeze Room',
     type: 'Standard',
-    desc: 'A bright and comfortable room with a relaxed tropical feel — a simple place to come back to after a day at the beach.',
+    desc: 'A bright and comfortable room with a relaxed tropical feel - a simple place to come back to after a day at the beach.',
     price: 'From $45 / night',
     img: '/images/standard.jpg',
     features: ['Sea view', 'AC', 'En-suite bath', 'Free Wi-Fi'],
@@ -23,7 +23,7 @@ const rooms = [
   {
     name: 'Garden Bungalow',
     type: 'Bungalow',
-    desc: 'Surrounded by greenery, the Garden Bungalow gives you a little more privacy and space — a comfortable choice for a longer stay.',
+    desc: 'Surrounded by greenery, the Garden Bungalow gives you a little more privacy and space - a comfortable choice for a longer stay.',
     price: 'From $65 / night',
     img: '/images/bungalow.jpg',
     features: ['Private garden', 'Kitchenette', 'Outdoor seating', 'Long stay deals'],

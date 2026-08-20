@@ -55,7 +55,7 @@ export default function Contact() {
             Planning a <span className="italic text-teal-700">Stay?</span>
           </h2>
           <p className="mt-4 max-w-xl mx-auto text-gray-500 font-body font-light leading-relaxed">
-            Planning a stay or have a question? Send us a message — we're happy to help with your dates, rooms or anything you want to know about Hiriketiya.
+            Planning a stay or have a question? Send us a message - we're happy to help with your dates, rooms or anything you want to know about Hiriketiya.
           </p>
         </div>
 

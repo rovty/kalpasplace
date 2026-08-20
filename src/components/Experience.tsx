@@ -5,7 +5,7 @@ const experiences = [
   {
     icon: <Waves size={26} />,
     title: 'Hiriketiya Beach',
-    desc: 'Surfing, swimming, relaxing and beach cafés — right on your doorstep.',
+    desc: 'Surfing, swimming, relaxing and beach cafés - right on your doorstep.',
     color: 'bg-blue-50 text-blue-700',
   },
   {
@@ -23,7 +23,7 @@ const experiences = [
   {
     icon: <TreePalm size={26} />,
     title: 'Jungle Beach',
-    desc: 'A hidden beach tucked between rocks and jungle — peaceful, scenic and perfect for a swim.',
+    desc: 'A hidden beach tucked between rocks and jungle - peaceful, scenic and perfect for a swim.',
     color: 'bg-emerald-50 text-emerald-700',
   },
   {
@@ -68,7 +68,7 @@ export default function Experience() {
             Discover What's Around <span className="italic text-teal-700">Hiriketiya</span>
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-gray-500 font-body font-light text-base leading-relaxed">
-            From golden beaches and ancient temples to whale watching and sunset cocktails — there's plenty to see and do nearby.
+            From golden beaches and ancient temples to whale watching and sunset cocktails - there's plenty to see and do nearby.
           </p>
         </div>
 
