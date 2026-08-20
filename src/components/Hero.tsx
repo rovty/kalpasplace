@@ -90,7 +90,7 @@ export default function Hero() {
           <img
             src="/images/logo.png"
             alt="Kalpa's Place logo"
-            className="w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full object-contain drop-shadow-2xl"
+            className="w-28 h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 rounded-full object-contain drop-shadow-2xl"
           />
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display text-white text-shadow leading-tight text-left">
             Kalpa's<br />
