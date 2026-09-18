@@ -72,7 +72,7 @@ export default function Hero() {
       ))}
 
       {/* Overlay */}
-      <div className="absolute inset-0 hero-gradient" />
+      <div className="absolute inset-0 hero-gradient backdrop-blur-sm" />
 
       {/* Animated wave bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-24 overflow-hidden pointer-events-none">
