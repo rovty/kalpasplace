@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { X, ChevronLeft, ChevronRight, Wifi, Wind, Bath, Tv, Wine, Utensils, Eye, Maximize2, BedDouble, Users } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, Wifi, Wind, Bath, Tv, Wine, Eye, Maximize2, BedDouble, Users } from 'lucide-react';
 import { buildBookingUrl } from '../context/BookingContext';
 
 const featureIcons: Record<string, JSX.Element> = {
-  'Private kitchen': <Utensils size={14} />,
   'Private bathroom': <Bath size={14} />,
   'Garden view': <Eye size={14} />,
   'Landmark view': <Eye size={14} />,

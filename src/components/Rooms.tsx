@@ -15,9 +15,9 @@ const rooms: Room[] = [
     size: '24 m²',
     bed: '1 king bed',
     occupancy: '2 Adults + 1 Child',
-    desc: 'A private bathroom with a bath, shower and bidet, plus a fully equipped kitchen with a fridge, microwave and toaster. Air conditioned, with a flat-screen TV, minibar and garden views.',
+    desc: 'A private bathroom with a bath, shower and bidet. Air conditioned, with a flat-screen TV, minibar and garden views.',
     images: roomImages('room-101'),
-    features: ['Private kitchen', 'Private bathroom', 'Garden view', 'Air conditioning', 'Flat-screen TV', 'Minibar', 'Free WiFi'],
+    features: ['Private bathroom', 'Garden view', 'Air conditioning', 'Flat-screen TV', 'Minibar', 'Free WiFi'],
     bookingUrl: 'https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html?label=gen173nr-10CAsohQFCFmthbHBhLXBsYWNlLWhpcmlrZXRpeWFIM1gEaIUBiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALCjKrVBsACAdICJGJmYTE2ODAzLTY4ZmMtNGI3ZS04NGY2LTgwODJmMDcxMDRiMNgCAeACAQ&sid=38aa337cab3ed10078eb446dbb07d3fb&keep_landing=1&sb_price_type=total&type=total&force_referer=#RD258616001',
     adults: 2,
     children: 1,
@@ -28,9 +28,9 @@ const rooms: Room[] = [
     size: '26 m²',
     bed: '1 twin bed & 1 king bed',
     occupancy: null,
-    desc: 'A private bathroom with a bath, shower and bidet, plus a fully equipped kitchen with a fridge, microwave and toaster. Air conditioned, with a flat-screen TV, minibar and garden views.',
+    desc: 'A private bathroom with a bath, shower and bidet. Air conditioned, with a flat-screen TV, minibar and garden views.',
     images: roomImages('room-102'),
-    features: ['Private kitchen', 'Private bathroom', 'Garden view', 'Air conditioning', 'Flat-screen TV', 'Minibar', 'Free WiFi'],
+    features: ['Private bathroom', 'Garden view', 'Air conditioning', 'Flat-screen TV', 'Minibar', 'Free WiFi'],
     bookingUrl: 'https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html?label=gen173nr-10CAsohQFCFmthbHBhLXBsYWNlLWhpcmlrZXRpeWFIM1gEaIUBiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALCjKrVBsACAdICJGJmYTE2ODAzLTY4ZmMtNGI3ZS04NGY2LTgwODJmMDcxMDRiMNgCAeACAQ&sid=38aa337cab3ed10078eb446dbb07d3fb&keep_landing=1&sb_price_type=total&type=total&force_referer=#RD258616002',
     adults: 3,
     children: 0,
@@ -41,9 +41,9 @@ const rooms: Room[] = [
     size: '28 m²',
     bed: null,
     occupancy: null,
-    desc: 'A private bathroom with a bath, shower and bidet, plus a fully equipped kitchen with a fridge, microwave and toaster. Air conditioned, with a flat-screen TV, minibar, a seating area and garden and landmark views.',
+    desc: 'A private bathroom with a bath, shower and bidet. Air conditioned, with a flat-screen TV, minibar, a seating area and garden and landmark views.',
     images: roomImages('room-103'),
-    features: ['Private kitchen', 'Private bathroom', 'Garden view', 'Landmark view', 'Air conditioning', 'Flat-screen TV', 'Minibar', 'Free WiFi'],
+    features: ['Private bathroom', 'Garden view', 'Landmark view', 'Air conditioning', 'Flat-screen TV', 'Minibar', 'Free WiFi'],
     bookingUrl: 'https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html?label=gen173nr-10CAsohQFCFmthbHBhLXBsYWNlLWhpcmlrZXRpeWFIM1gEaIUBiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALCjKrVBsACAdICJGJmYTE2ODAzLTY4ZmMtNGI3ZS04NGY2LTgwODJmMDcxMDRiMNgCAeACAQ&sid=38aa337cab3ed10078eb446dbb07d3fb&keep_landing=1&sb_price_type=total&type=total&force_referer=#RD258616003',
     adults: 2,
     children: 0,
@@ -76,7 +76,7 @@ export default function Rooms() {
             Rooms & <span className="italic text-teal-700">Suites</span>
           </h2>
           <p className="mt-4 max-w-xl mx-auto text-gray-500 font-body font-light text-base leading-relaxed">
-            Three deluxe rooms, each with a private kitchen and bathroom, air conditioning and garden views - simple, comfortable spaces to come back to after a day in Hiriketiya.
+            Three deluxe rooms, each with a private bathroom, air conditioning and garden views - simple, comfortable spaces to come back to after a day in Hiriketiya.
           </p>
         </div>
 
