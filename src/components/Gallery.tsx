@@ -6,36 +6,92 @@ const images = [
     url: '/images/hero-1.jpg',
     alt: 'Hiriketiya beach aerial view',
     span: 'col-span-2 row-span-2',
+    width: 2048,
+    height: 1152,
   },
   {
     url: '/images/gallery-1.jpg',
     alt: 'Surfer on wave',
     span: '',
+    width: 1200,
+    height: 900,
   },
   {
     url: '/images/gallery-2.jpg',
     alt: 'Tropical palm trees beach',
     span: '',
+    width: 1200,
+    height: 1600,
   },
   {
     url: '/images/gallery-3.jpg',
     alt: 'Beach coffee relaxation',
     span: '',
+    width: 1200,
+    height: 1600,
   },
   {
     url: '/images/hero-4.jpg',
     alt: 'Tropical resort pool',
     span: '',
-  },
-  {
-    url: '/images/bungalow.jpg',
-    alt: 'Tropical bungalow',
-    span: '',
+    width: 1200,
+    height: 1600,
   },
   {
     url: '/images/hero-3.jpg',
     alt: 'Ocean waves',
     span: '',
+    width: 1080,
+    height: 675,
+  },
+  {
+    url: '/images/entrance.jpg',
+    alt: 'Entrance',
+    span: '',
+    width: 1600,
+    height: 1200,
+  },
+  {
+    url: '/images/entrance-gate.jpg',
+    alt: 'Kalpa\'s Place entrance gate',
+    span: '',
+    width: 1600,
+    height: 1200,
+  },
+  {
+    url: '/images/entrance-doors.jpg',
+    alt: 'Carved wooden entrance doors',
+    span: '',
+    width: 1600,
+    height: 1200,
+  },
+  {
+    url: '/images/reception.jpg',
+    alt: 'Reception',
+    span: '',
+    width: 1600,
+    height: 1184,
+  },
+  {
+    url: '/images/reception-hallway.jpg',
+    alt: 'Reception hallway',
+    span: '',
+    width: 1200,
+    height: 1600,
+  },
+  {
+    url: '/images/garden.jpg',
+    alt: 'Garden',
+    span: '',
+    width: 1600,
+    height: 1200,
+  },
+  {
+    url: '/images/kitchen.jpg',
+    alt: 'Kitchen',
+    span: '',
+    width: 1200,
+    height: 1600,
   },
 ];
 
@@ -94,6 +150,10 @@ export default function Gallery() {
               <img
                 src={img.url}
                 alt={img.alt}
+                width={img.width}
+                height={img.height}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover slide-img group-hover:brightness-95 transition-all duration-500"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/15 transition-all duration-300 flex items-center justify-center">

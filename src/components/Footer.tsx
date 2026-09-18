@@ -1,7 +1,10 @@
 import { Waves, Instagram, Facebook, MessageCircle, ExternalLink } from 'lucide-react';
+import { useBooking, buildBookingUrl, GENERAL_BOOKING_URL } from '../context/BookingContext';
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  const { checkIn, checkOut } = useBooking();
+  const bookingHref = buildBookingUrl(GENERAL_BOOKING_URL, checkIn, checkOut);
 
   return (
     <footer className="bg-gray-950 text-white">
@@ -16,7 +19,7 @@ export default function Footer() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html"
+              href={bookingHref}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-white text-teal-800 font-medium text-sm hover:bg-teal-50 transition-all duration-300 shadow-lg"
@@ -40,17 +43,25 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-4 mb-4">
-              <img src="/images/logo.png" alt="Kalpa's Place logo" className="w-14 h-14 rounded-full object-contain" />
+              <img
+                src="/images/logo.png"
+                alt="Kalpa's Place logo"
+                width={56}
+                height={56}
+                loading="lazy"
+                decoding="async"
+                className="w-14 h-14 rounded-full object-contain"
+              />
               <p className="font-display text-xl text-white font-bold">Kalpa's Place</p>
             </div>
             <p className="text-gray-400 text-sm font-body font-light leading-relaxed max-w-xs">
               A relaxed place to stay in Hiriketiya, close to the beach and the best of Sri Lanka's south coast.
             </p>
             <div className="flex gap-3 mt-6">
-              <a href="#" className="w-9 h-9 rounded-lg bg-white/5 hover:bg-teal-700/40 flex items-center justify-center transition-colors text-gray-400 hover:text-white" aria-label="Instagram">
+              <a href="#" onClick={e => e.preventDefault()} className="w-9 h-9 rounded-lg bg-white/5 hover:bg-teal-700/40 flex items-center justify-center transition-colors text-gray-400 hover:text-white" aria-label="Instagram">
                 <Instagram size={16} />
               </a>
-              <a href="#" className="w-9 h-9 rounded-lg bg-white/5 hover:bg-teal-700/40 flex items-center justify-center transition-colors text-gray-400 hover:text-white" aria-label="Facebook">
+              <a href="#" onClick={e => e.preventDefault()} className="w-9 h-9 rounded-lg bg-white/5 hover:bg-teal-700/40 flex items-center justify-center transition-colors text-gray-400 hover:text-white" aria-label="Facebook">
                 <Facebook size={16} />
               </a>
               <a href="https://wa.me/94776765556" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-white/5 hover:bg-teal-700/40 flex items-center justify-center transition-colors text-gray-400 hover:text-white" aria-label="WhatsApp">
@@ -66,6 +77,7 @@ export default function Footer() {
               {[
                 ['About Us', '#about'],
                 ['Rooms & Suites', '#rooms'],
+                ['Breakfast & Minibar', '#dining'],
                 ['Experiences', '#experience'],
                 ['Photo Gallery', '#gallery'],
                 ['Contact Us', '#contact'],
@@ -85,7 +97,7 @@ export default function Footer() {
             <ul className="space-y-2.5 text-gray-400 text-sm font-body">
               <li>
                 <span className="text-gray-500 text-xs uppercase tracking-widest block mb-0.5">Check-in</span>
-                2:00 PM
+                1:00 PM
               </li>
               <li>
                 <span className="text-gray-500 text-xs uppercase tracking-widest block mb-0.5">Check-out</span>
@@ -103,7 +115,7 @@ export default function Footer() {
               </li>
               <li className="pt-2">
                 <a
-                  href="https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html"
+                  href={bookingHref}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-blue-400 hover:text-blue-300 transition-colors"

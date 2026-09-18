@@ -6,7 +6,10 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#0f766e" />
 
     <!-- Primary SEO -->
@@ -24,8 +27,8 @@
     <meta property="og:title" content="Kalpa's Place | Beachfront Boutique Stay in Hiriketiya, Sri Lanka" />
     <meta property="og:description" content="Boutique beachfront guesthouse in Hiriketiya, Dickwella - steps from the surf. Rooms from $18/night. Book on Booking.com." />
     <meta property="og:image" content="https://kalpasplacehiri.lk/images/hero-1.jpg" />
-    <meta property="og:image:width" content="1920" />
-    <meta property="og:image:height" content="1280" />
+    <meta property="og:image:width" content="2048" />
+    <meta property="og:image:height" content="1152" />
     <meta property="og:locale" content="en_US" />
 
     <!-- Twitter -->
@@ -68,17 +71,62 @@
         "latitude": 5.963010,
         "longitude": 80.700373
       },
-      "priceRange": "$18 - $85",
-      "checkinTime": "14:00",
+      "checkinTime": "13:00",
       "checkoutTime": "11:00",
-      "starRating": {
-        "@type": "Rating",
-        "ratingValue": "4"
-      },
+      "numberOfRooms": 3,
       "amenityFeature": [
         { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true },
         { "@type": "LocationFeatureSpecification", "name": "Beachfront", "value": true },
         { "@type": "LocationFeatureSpecification", "name": "Air conditioning", "value": true }
+      ],
+      "containsPlace": [
+        {
+          "@type": "HotelRoom",
+          "name": "Room 101 - Deluxe Double Room",
+          "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 },
+          "floorSize": { "@type": "QuantitativeValue", "value": 24, "unitCode": "MTK" },
+          "bed": { "@type": "BedDetails", "typeOfBed": "King", "numberOfBed": 1 },
+          "amenityFeature": [
+            { "@type": "LocationFeatureSpecification", "name": "Private kitchen", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Private bathroom", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Air conditioning", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Garden view", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Minibar", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true }
+          ]
+        },
+        {
+          "@type": "HotelRoom",
+          "name": "Room 102 - Deluxe Triple Room",
+          "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 },
+          "floorSize": { "@type": "QuantitativeValue", "value": 26, "unitCode": "MTK" },
+          "bed": [
+            { "@type": "BedDetails", "typeOfBed": "Twin", "numberOfBed": 1 },
+            { "@type": "BedDetails", "typeOfBed": "King", "numberOfBed": 1 }
+          ],
+          "amenityFeature": [
+            { "@type": "LocationFeatureSpecification", "name": "Private kitchen", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Private bathroom", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Air conditioning", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Garden view", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Minibar", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true }
+          ]
+        },
+        {
+          "@type": "HotelRoom",
+          "name": "Room 103 - Deluxe Double Room",
+          "floorSize": { "@type": "QuantitativeValue", "value": 28, "unitCode": "MTK" },
+          "amenityFeature": [
+            { "@type": "LocationFeatureSpecification", "name": "Private kitchen", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Private bathroom", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Air conditioning", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Garden view", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Landmark view", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Minibar", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true }
+          ]
+        }
       ],
       "sameAs": [
         "https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html"

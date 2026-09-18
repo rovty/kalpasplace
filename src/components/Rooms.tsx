@@ -1,56 +1,58 @@
 import { useEffect, useRef } from 'react';
-import { Wifi, Wind, Bath, Eye } from 'lucide-react';
+import { useBooking } from '../context/BookingContext';
+import RoomCard, { Room } from './RoomCard';
 
-const rooms = [
+const IMAGES_PER_ROOM = 5;
+
+function roomImages(folder: string): string[] {
+  return Array.from({ length: IMAGES_PER_ROOM }, (_, i) => `/images/${folder}/${String(i + 1).padStart(2, '0')}.jpg`);
+}
+
+const rooms: Room[] = [
   {
-    name: 'Ocean Breeze Room',
-    type: 'Standard',
-    desc: 'A bright and comfortable room with a relaxed tropical feel - a simple place to come back to after a day at the beach.',
-    price: 'From $45 / night',
-    img: '/images/standard.jpg',
-    features: ['Sea view', 'AC', 'En-suite bath', 'Free Wi-Fi'],
-    badge: null,
+    number: '101',
+    type: 'Deluxe Double Room (2 Adults + 1 Child)',
+    size: '24 m²',
+    bed: '1 king bed',
+    occupancy: '2 Adults + 1 Child',
+    desc: 'A private bathroom with a bath, shower and bidet, plus a fully equipped kitchen with a fridge, microwave and toaster. Air conditioned, with a flat-screen TV, minibar and garden views.',
+    images: roomImages('room-101'),
+    features: ['Private kitchen', 'Private bathroom', 'Garden view', 'Air conditioning', 'Flat-screen TV', 'Minibar', 'Free WiFi'],
+    bookingUrl: 'https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html?label=gen173nr-10CAsohQFCFmthbHBhLXBsYWNlLWhpcmlrZXRpeWFIM1gEaIUBiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALCjKrVBsACAdICJGJmYTE2ODAzLTY4ZmMtNGI3ZS04NGY2LTgwODJmMDcxMDRiMNgCAeACAQ&sid=38aa337cab3ed10078eb446dbb07d3fb&keep_landing=1&sb_price_type=total&type=total&force_referer=#RD258616001',
+    adults: 2,
+    children: 1,
   },
   {
-    name: 'Surf Suite',
-    type: 'Suite',
-    desc: 'Our spacious suite for those who want a little more room to relax. Come back from the beach, slow down and enjoy your own private space.',
-    price: 'From $85 / night',
-    img: '/images/suite.jpg',
-    features: ['Panoramic view', 'King bed', 'Open shower', 'Deck'],
-    badge: 'Most Popular',
+    number: '102',
+    type: 'Deluxe Triple Room',
+    size: '26 m²',
+    bed: '1 twin bed & 1 king bed',
+    occupancy: null,
+    desc: 'A private bathroom with a bath, shower and bidet, plus a fully equipped kitchen with a fridge, microwave and toaster. Air conditioned, with a flat-screen TV, minibar and garden views.',
+    images: roomImages('room-102'),
+    features: ['Private kitchen', 'Private bathroom', 'Garden view', 'Air conditioning', 'Flat-screen TV', 'Minibar', 'Free WiFi'],
+    bookingUrl: 'https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html?label=gen173nr-10CAsohQFCFmthbHBhLXBsYWNlLWhpcmlrZXRpeWFIM1gEaIUBiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALCjKrVBsACAdICJGJmYTE2ODAzLTY4ZmMtNGI3ZS04NGY2LTgwODJmMDcxMDRiMNgCAeACAQ&sid=38aa337cab3ed10078eb446dbb07d3fb&keep_landing=1&sb_price_type=total&type=total&force_referer=#RD258616002',
+    adults: 3,
+    children: 0,
   },
   {
-    name: 'Garden Bungalow',
-    type: 'Bungalow',
-    desc: 'Surrounded by greenery, the Garden Bungalow gives you a little more privacy and space - a comfortable choice for a longer stay.',
-    price: 'From $65 / night',
-    img: '/images/bungalow.jpg',
-    features: ['Private garden', 'Kitchenette', 'Outdoor seating', 'Long stay deals'],
-    badge: 'Long Stay',
-  },
-  {
-    name: 'Dormitory Pod',
-    type: 'Shared',
-    desc: 'A simple and comfortable option for solo travellers, with your own sleeping space and a chance to meet other travellers.',
-    price: 'From $18 / night',
-    img: '/images/shared.jpg',
-    features: ['Private pods', 'Lockers', 'Social lounge', 'Budget-friendly'],
-    badge: null,
+    number: '103',
+    type: 'Deluxe Double Room',
+    size: '28 m²',
+    bed: null,
+    occupancy: null,
+    desc: 'A private bathroom with a bath, shower and bidet, plus a fully equipped kitchen with a fridge, microwave and toaster. Air conditioned, with a flat-screen TV, minibar, a seating area and garden and landmark views.',
+    images: roomImages('room-103'),
+    features: ['Private kitchen', 'Private bathroom', 'Garden view', 'Landmark view', 'Air conditioning', 'Flat-screen TV', 'Minibar', 'Free WiFi'],
+    bookingUrl: 'https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html?label=gen173nr-10CAsohQFCFmthbHBhLXBsYWNlLWhpcmlrZXRpeWFIM1gEaIUBiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALCjKrVBsACAdICJGJmYTE2ODAzLTY4ZmMtNGI3ZS04NGY2LTgwODJmMDcxMDRiMNgCAeACAQ&sid=38aa337cab3ed10078eb446dbb07d3fb&keep_landing=1&sb_price_type=total&type=total&force_referer=#RD258616003',
+    adults: 2,
+    children: 0,
   },
 ];
 
-const featureIcons: Record<string, JSX.Element> = {
-  'Sea view': <Eye size={14} />,
-  'Panoramic view': <Eye size={14} />,
-  AC: <Wind size={14} />,
-  'En-suite bath': <Bath size={14} />,
-  'Open shower': <Bath size={14} />,
-  'Free Wi-Fi': <Wifi size={14} />,
-};
-
 export default function Rooms() {
   const sectionRef = useRef<HTMLElement>(null);
+  const { checkIn, checkOut, setCheckIn, setCheckOut, minCheckIn } = useBooking();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -69,71 +71,41 @@ export default function Rooms() {
   return (
     <section id="rooms" ref={sectionRef} className="py-24 md:py-32 bg-white">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="reveal text-center mb-16">
+        <div className="reveal text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-display text-gray-900 leading-tight">
             Rooms & <span className="italic text-teal-700">Suites</span>
           </h2>
           <p className="mt-4 max-w-xl mx-auto text-gray-500 font-body font-light text-base leading-relaxed">
-            Choose the space that suits your stay, from a comfortable room for a few nights to a private bungalow when you want a little more space and privacy.
+            Three deluxe rooms, each with a private kitchen and bathroom, air conditioning and garden views - simple, comfortable spaces to come back to after a day in Hiriketiya.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {rooms.map((room, i) => (
-            <div
-              key={i}
-              className="reveal room-card rounded-3xl overflow-hidden bg-white border border-gray-100 shadow-sm"
-              style={{ transitionDelay: `${i * 0.12}s` }}
-            >
-              <div className="relative overflow-hidden h-60">
-                {/* Image placeholder */}
-                <img
-                  src={room.img}
-                  alt={room.name}
-                  className="w-full h-full object-cover slide-img"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-                {room.badge && (
-                  <span className="absolute top-4 right-4 bg-teal-600 text-white text-xs font-medium px-3 py-1 rounded-full">
-                    {room.badge}
-                  </span>
-                )}
-                <span className="absolute top-4 left-4 bg-white/90 text-gray-700 text-xs font-medium px-3 py-1 rounded-full">
-                  {room.type}
-                </span>
-              </div>
+        <div className="reveal max-w-xl mx-auto mb-12 grid grid-cols-2 gap-4">
+          <label className="flex flex-col text-sm font-body text-gray-600">
+            Check-in
+            <input
+              type="date"
+              value={checkIn}
+              min={minCheckIn}
+              onChange={e => setCheckIn(e.target.value)}
+              className="mt-1 rounded-xl border border-gray-200 px-3 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-teal-500"
+            />
+          </label>
+          <label className="flex flex-col text-sm font-body text-gray-600">
+            Check-out
+            <input
+              type="date"
+              value={checkOut}
+              min={new Date(new Date(checkIn).getTime() + 86400000).toISOString().split('T')[0]}
+              onChange={e => setCheckOut(e.target.value)}
+              className="mt-1 rounded-xl border border-gray-200 px-3 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-teal-500"
+            />
+          </label>
+        </div>
 
-              <div className="p-6">
-                <div className="flex items-start justify-between mb-3">
-                  <h3 className="font-display text-xl text-gray-900">{room.name}</h3>
-                  <p className="text-teal-700 font-body font-medium text-sm whitespace-nowrap ml-4 mt-1">
-                    {room.price}
-                  </p>
-                </div>
-                <p className="text-gray-500 text-sm font-body font-light leading-relaxed mb-4">
-                  {room.desc}
-                </p>
-                <div className="flex flex-wrap gap-2 mb-5">
-                  {room.features.map((f, j) => (
-                    <span
-                      key={j}
-                      className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-50 text-teal-700 text-xs font-body"
-                    >
-                      {featureIcons[f]}
-                      {f}
-                    </span>
-                  ))}
-                </div>
-                <a
-                  href="https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full inline-flex justify-center items-center px-6 py-2.5 rounded-xl bg-teal-700 text-white text-sm font-medium hover:bg-teal-800 transition-all duration-300"
-                >
-                  Check Availability
-                </a>
-              </div>
-            </div>
+        <div className="grid md:grid-cols-3 gap-8">
+          {rooms.map((room, i) => (
+            <RoomCard key={room.number} room={room} checkIn={checkIn} checkOut={checkOut} delay={i * 0.12} />
           ))}
         </div>
       </div>

@@ -42,7 +42,7 @@ export default function DroneVideo() {
         <div className="reveal grid grid-cols-3 gap-px mt-12 bg-gray-200 rounded-2xl overflow-hidden shadow-sm">
           {[
             { label: 'Walk to Beach', value: '< 2 min' },
-            { label: 'Check-in', value: '2:00 PM' },
+            { label: 'Check-in', value: '1:00 PM' },
             { label: 'Check-out', value: '11:00 AM' },
           ].map((stat, i) => (
             <div key={i} className="bg-white px-6 py-6 text-center">

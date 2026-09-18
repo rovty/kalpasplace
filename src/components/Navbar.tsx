@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useBooking, buildBookingUrl, GENERAL_BOOKING_URL } from '../context/BookingContext';
 
 const links = [
   { label: 'Home', href: '#home' },
   { label: 'Rooms', href: '#rooms' },
+  { label: 'Dining', href: '#dining' },
   { label: 'About', href: '#about' },
   { label: 'Experience', href: '#experience' },
   { label: 'Gallery', href: '#gallery' },
@@ -13,6 +15,8 @@ const links = [
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState('home');
+  const { checkIn, checkOut } = useBooking();
+  const bookingHref = buildBookingUrl(GENERAL_BOOKING_URL, checkIn, checkOut);
 
   useEffect(() => {
     const sections = links.map(l => l.href.replace('#', ''));
@@ -63,7 +67,7 @@ export default function Navbar() {
 
         {/* Book now CTA */}
         <a
-          href="https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html"
+          href={bookingHref}
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium bg-teal-700 text-white hover:bg-teal-800 shadow-md hover:shadow-lg transition-all duration-300"
@@ -105,7 +109,7 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              href="https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html"
+              href={bookingHref}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}

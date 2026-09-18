@@ -50,6 +50,10 @@ export default function About() {
               <img
                 src="/images/gallery-2.jpg"
                 alt="Tropical beach palm trees"
+                width={1200}
+                height={1600}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover slide-img"
               />
             </div>
@@ -57,6 +61,10 @@ export default function About() {
               <img
                 src="/images/gallery-1.jpg"
                 alt="Surfer on wave"
+                width={1200}
+                height={900}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover slide-img"
               />
             </div>
@@ -64,6 +72,10 @@ export default function About() {
               <img
                 src="/images/gallery-3.jpg"
                 alt="Beach coffee and relaxation"
+                width={1200}
+                height={1600}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover slide-img"
               />
             </div>

@@ -1,9 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import { Mail, MapPin, ExternalLink, MessageCircle, Instagram, Facebook } from 'lucide-react';
+import { useBooking, buildBookingUrl, GENERAL_BOOKING_URL, toISODate } from '../context/BookingContext';
 
 export default function Contact() {
   const sectionRef = useRef<HTMLElement>(null);
-  const [form, setForm] = useState({ name: '', email: '', checkin: '', checkout: '', message: '' });
+  const { checkIn, checkOut, minCheckIn } = useBooking();
+  const bookingHref = buildBookingUrl(GENERAL_BOOKING_URL, checkIn, checkOut);
+  const [form, setForm] = useState({ name: '', email: '', checkin: checkIn, checkout: checkOut, message: '' });
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
 
@@ -100,10 +103,10 @@ export default function Contact() {
               <div className="mt-8 pt-6 border-t border-white/15 relative z-10">
                 <p className="text-white/60 text-xs uppercase tracking-widest mb-4">Follow Us</p>
                 <div className="flex gap-3">
-                  <a href="#" className="w-9 h-9 rounded-lg bg-white/15 hover:bg-white/25 flex items-center justify-center transition-colors" aria-label="Instagram">
+                  <a href="#" onClick={e => e.preventDefault()} className="w-9 h-9 rounded-lg bg-white/15 hover:bg-white/25 flex items-center justify-center transition-colors" aria-label="Instagram">
                     <Instagram size={16} />
                   </a>
-                  <a href="#" className="w-9 h-9 rounded-lg bg-white/15 hover:bg-white/25 flex items-center justify-center transition-colors" aria-label="Facebook">
+                  <a href="#" onClick={e => e.preventDefault()} className="w-9 h-9 rounded-lg bg-white/15 hover:bg-white/25 flex items-center justify-center transition-colors" aria-label="Facebook">
                     <Facebook size={16} />
                   </a>
                   <a href="https://wa.me/94776765556" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-white/15 hover:bg-white/25 flex items-center justify-center transition-colors" aria-label="WhatsApp">
@@ -115,7 +118,7 @@ export default function Contact() {
 
             {/* Check Availability */}
             <a
-              href="https://www.booking.com/hotel/lk/kalpa-place-hiriketiya.html"
+              href={bookingHref}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-between px-6 py-5 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white transition-all duration-300 shadow-lg hover:shadow-xl group"
@@ -183,6 +186,7 @@ export default function Contact() {
                     <input
                       type="date"
                       value={form.checkin}
+                      min={minCheckIn}
                       onChange={e => setForm({ ...form, checkin: e.target.value })}
                       className={inputClass}
                     />
@@ -194,6 +198,7 @@ export default function Contact() {
                     <input
                       type="date"
                       value={form.checkout}
+                      min={toISODate(new Date(new Date(form.checkin).getTime() + 86400000))}
                       onChange={e => setForm({ ...form, checkout: e.target.value })}
                       className={inputClass}
                     />
