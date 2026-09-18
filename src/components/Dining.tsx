@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Coffee, Clock, Phone, Beer, Cookie } from 'lucide-react';
+import { Coffee, Beer, Cookie } from 'lucide-react';
 
 const breakfastOptions = [
   {
@@ -91,13 +91,6 @@ export default function Dining() {
                 </div>
               ))}
             </div>
-
-            <div className="mt-7 pt-6 border-t border-gray-100 flex items-start gap-3">
-              <Clock size={16} className="text-teal-600 mt-0.5 flex-shrink-0" />
-              <p className="text-gray-500 text-xs font-body font-light leading-relaxed">
-                Breakfast is available on request. Please place your order with reception before 8:00 PM the previous day, and confirm your preferred option and serving time.
-              </p>
-            </div>
           </div>
 
           {/* Minibar */}
@@ -133,13 +126,6 @@ export default function Dining() {
                   </div>
                 </div>
               ))}
-            </div>
-
-            <div className="mt-7 pt-6 border-t border-gray-100 flex items-start gap-3">
-              <Phone size={16} className="text-teal-600 mt-0.5 flex-shrink-0" />
-              <p className="text-gray-500 text-xs font-body font-light leading-relaxed">
-                Need anything replaced or refilled? Just contact reception.
-              </p>
             </div>
           </div>
         </div>

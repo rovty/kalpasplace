@@ -19,6 +19,18 @@ const slides = [
     url: '/images/hero-4.jpg',
     alt: 'Tropical resort palm trees',
   },
+  {
+    url: '/images/hero-5.jpg',
+    alt: 'Deluxe Double Room with crib for a child',
+  },
+  {
+    url: '/images/hero-6.jpg',
+    alt: 'Deluxe Triple Room interior',
+  },
+  {
+    url: '/images/hero-7.jpg',
+    alt: 'Deluxe Double Room with garden balcony',
+  },
 ];
 
 export default function Hero() {
